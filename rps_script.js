@@ -54,8 +54,8 @@ const score = JSON.parse(localStorage.getItem('score')) || {wins: 0, losses: 0, 
 
         document.querySelector('.js-moves')
         .innerHTML = `You
-         <img src="images/${playerMove}-emoji.png" class="move-icon">
-         <img src="images/${computerMove}-emoji.png" class="move-icon"> 
+         <img src="images/${playerMove.toLowerCase()}-emoji.png" class="move-icon">
+         <img src="images/${computerMove.toLowerCase()}-emoji.png" class="move-icon"> 
          Computer`
 
          /*alert(`You picked ${playerMove}.Computer picked ${computerMove}.${result}
